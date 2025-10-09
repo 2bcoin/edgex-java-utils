@@ -1,0 +1,343 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.5" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"$sizePolicy": 1
+			"$locationPolicy": 1
+			"title": "edgexTrade"
+			"resizable": false
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosed", "thisWindowClosed", true ) )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "privateKeyTextField"
+				addEvent( new FormEvent( "java.awt.event.InputMethodListener", "inputMethodTextChanged", "privateKeyTextFieldInputMethodTextChanged", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 100
+				"y": 10
+				"width": 145
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "privateKey"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 25
+				"y": 12
+				"width": 70
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "privateKeyLengthLabel"
+				"text": "0"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 248
+				"y": 13
+				"width": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "AccountId"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 70
+				"height": 17
+				"x": 275
+				"y": 13
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "accountIdTextField"
+				addEvent( new FormEvent( "java.awt.event.InputMethodListener", "inputMethodTextChanged", "privateKeyTextFieldInputMethodTextChanged", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 145
+				"height": 23
+				"x": 340
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "accountIdLengthLabel"
+				"text": "0"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 30
+				"height": 17
+				"x": 488
+				"y": 13
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "skey"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 35
+				"height": 17
+				"x": 505
+				"y": 13
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "skeyTextField"
+				addEvent( new FormEvent( "java.awt.event.InputMethodListener", "inputMethodTextChanged", "privateKeyTextFieldInputMethodTextChanged", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 145
+				"height": 23
+				"x": 535
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "mkey"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 32
+				"height": 15
+				"x": 688
+				"y": 15
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "mkeyTextField"
+				"editable": false
+				addEvent( new FormEvent( "java.awt.event.InputMethodListener", "inputMethodTextChanged", "privateKeyTextFieldInputMethodTextChanged", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 156
+				"height": 23
+				"x": 724
+				"y": 10
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "shuaxinButton"
+				"text": "刷新"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "shuaxinButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 880
+				"y": 10
+				"width": 60
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "activeLabel"
+				"text": "授权至2025-12-12 12:12:12"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 175
+				"height": 17
+				"x": 945
+				"y": 15
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lastGetLabel"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 17
+				"x": 995
+				"y": 0
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "positionTable"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 445
+				"height": 135
+				"width": 1095
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "flushPositionButton"
+				"text": "刷新仓位"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "flushPositionButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 88
+				"height": 23
+				"x": 921
+				"y": 420
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "closeAllPositionButton"
+				"text": "全部平仓"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "flushPositionButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "closeAllPositionButtonMouseClicked", true ) )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "closeAllPositionButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 88
+				"height": 23
+				"x": 1015
+				"y": 420
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "accountAssetTable"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 370
+				"width": 715
+				"height": 72
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 10
+				"y": 37
+				"height": 5
+				"width": 1100
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "contractComboBox"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 76
+				"y": 47
+				"height": 23
+				"width": 144
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "contract"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 60
+				"height": 17
+				"x": 20
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "下单数量"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 55
+				"height": 17
+				"x": 425
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "sizeComboBox"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 52
+				"height": 23
+				"x": 482
+				"y": 46
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "sizeValueLabel"
+				"text": "ETH"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 75
+				"height": 17
+				"x": 536
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "止盈"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 35
+				"height": 17
+				"x": 606
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "zhiyingComboBox"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 55
+				"height": 23
+				"x": 636
+				"y": 47
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label8"
+				"text": "‱"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 25
+				"height": 17
+				"x": 693
+				"y": 51
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label9"
+				"text": "止损"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 35
+				"height": 17
+				"x": 721
+				"y": 49
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "zhisunComboBox"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 55
+				"height": 23
+				"x": 751
+				"y": 49
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label10"
+				"text": "‱"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 25
+				"height": 17
+				"x": 808
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "gangganTishiLabel1"
+				"text": " ！"
+				"foreground": new java.awt.Color( 240, 0, 0, 255 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "gangganTishiLabel1MouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 926
+				"y": 50
+				"width": 20
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "gangganComboBox"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 55
+				"height": 23
+				"x": 864
+				"y": 48
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label12"
+				"text": "杠杆"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 35
+				"height": 17
+				"x": 836
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "currPriceLabel"
+				"text": "$"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 70
+				"height": 17
+				"x": 225
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "depthLastTimeLabel"
+				"text": "2025-12-12 12:12:12"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 17
+				"x": 295
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "askbidPriceLabel"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 155
+				"height": 17
+				"x": 70
+				"y": 75
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "defaultTradeButton"
+				"text": "启动交易"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "defaultTradeButtonMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 955
+				"y": 50
+				"width": 145
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 1130, 630 )
+		} )
+	}
+}
