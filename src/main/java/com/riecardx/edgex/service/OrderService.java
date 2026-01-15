@@ -147,6 +147,7 @@ public class OrderService {
      * @return
      */
     public CreateOrderResult createOrder(String coinId, String constractId, String privateKeyHex, String accountId, OrderTypeEnum typeEnum, Double price, Double size, Double slPrice, Double tpPrice,Double shijiaPrice) {
+        System.out.println("constractId:"+constractId+";typeEnum:"+typeEnum.getVal()+";price:"+price+";size:"+size);
         // TODO 目前只交易BTHUSD，以后有其他交易下单时，要修改
         CoinModel coinModel = metaDataService.getCoinModel(coinId);
         ContractModel contractModel = metaDataService.getContractModel(constractId);
@@ -277,6 +278,7 @@ public class OrderService {
         logger.info(response.getStatusCode());
         String resStr = (String)response.getBody();
         logger.info("Response: " + resStr);
+        System.out.println("Response: " + resStr);
         return JSONUtil.toBean(resStr, CreateOrderResult.class);
     }
 

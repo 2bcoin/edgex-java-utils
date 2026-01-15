@@ -31,6 +31,7 @@ public class MapUtils {
                 Double boo = (Double) map.get(key);
                 return boo;
             } catch (Exception e) {
+                e.printStackTrace();
                 return null;
             }
         }
