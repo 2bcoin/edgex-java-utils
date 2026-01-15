@@ -11,6 +11,8 @@ Operation steps: 1. Unzip edgexTrade-x.x.zip 2. Double-click edgexTrade.exe 3. S
 ![image]( https://github.com/2bcoin/edgex-java-utils/blob/main/imgs/20260113.gif)  
 
 ### edgex 交易所 API开发JAVA版本，需改造使用  
+edgex 交易所地址：[https://pro.edgex.exchange/referral/FACAI](https://pro.edgex.exchange/referral/FACAI)
+
 用户相关接口参见AccountUtils.java  
 签名相关参见SignUtils.java 
 ![image]( https://github.com/2bcoin/edgex-java-utils/blob/main/imgs/Snipaste_2025-10-09_21-51-20.jpg)  
